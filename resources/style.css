@@ -36,29 +36,75 @@ header .nav {
 
 .jumbo {
   display: flex;
-  height: 700px;
   width: 1200px;
-  background-image: url("../resources/images/img-mission-background.jpg");
   justify-content: center;
   align-items: center;
   margin: auto;
 }
 
+#mission {
+  height: 700px;
+  background-image: url("../resources/images/img-mission-background.jpg");
+}
+
+#locations {
+  height: 500px;
+  background-image: url("../resources/images/img-locations-background.jpg");
+}
+
+
 .textbox {
   display: flex;
-  width: 100%;
+  width: 1200px;
   flex-direction: column;
   align-items: center;
+  margin: auto;
 }
 
 .picbox {
-  display: flex;
-  width: 300px;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 25px;
 }
 
 .picbox img {
   height: 200px;
   width: 300px;
+  margin: 25px 0 10px 0;
+}
+
+.menu {
+  display: flex;
+  width: 1050px;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#locations {
+  flex-wrap: wrap;
+}
+
+.locbox {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.contact {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+footer {
+  text-align: left;
+  width: 100%;
+  padding-left: 20px;
 }
