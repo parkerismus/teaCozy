@@ -35,6 +35,15 @@ header {
   border-bottom: 1px solid seashell;
 }
 
+/* Adjustment for fixed header while ensuring
+  nav links go to the correct point.
+  Feedback on how best to achieve this
+  (e.g. with position: relative)
+  would be appreciated. Thanks */
+.jumbo, .menu {
+  padding-top: 70px;
+}
+
 header img {
   height: 50px;
   margin-left: 10px;
@@ -56,21 +65,19 @@ header .nav {
   width: 1200px;
   justify-content: center;
   align-items: center;
-  margin: auto;
   position: relative;
+  margin: 0 auto;
 }
 
 #mission {
   height: 700px;
   background-image: url("../resources/images/img-mission-background.jpg");
-  top: 70px;
-  margin-bottom: 140px;
 }
 
 #locations {
-  height: 500px;
+  height: 300px;
+  padding: 100px 0;
   background-image: url("../resources/images/img-locations-background.jpg");
-  margin-top: 50px;
   flex-wrap: wrap;
 }
 
@@ -79,7 +86,7 @@ header .nav {
   height: auto;
   padding: 0;
   position: absolute;
-  bottom: 415px;
+  top: 80px;
 }
 
 .textbox {
@@ -110,13 +117,14 @@ header .nav {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  margin-bottom: 70px;
 }
 
 .locbox {
   display: flex;
   flex-direction: column;
   opacity: 1;
-  height: 300px;
+  height: 250px;
   width: 300px;
   align-items: center;
   justify-content: space-around;
