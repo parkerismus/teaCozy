@@ -1,22 +1,39 @@
 * {
   font-family: Helvetica;
-  font-size: 22px;
   color: seashell;
   background-color: black;
   opacity: 0.9;
+  font-size: 22px;
+  margin: 0;
 }
 
+h2 {
+  font-size: 33px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h5 {
+  font-size: 18px;
+  padding: 15px;
+}
+
+h2, h4 {
+  padding: 10px;
+}
 
 header {
   display: flex;
+  position: fixed;
+  z-index: 1;
   height: 69px;
   width: 100%;
   align-items: center;
   justify-content: space-around;
   border-bottom: 1px solid seashell;
 }
-
-/* NEED TO FIX HEADER POSITION */
 
 header img {
   height: 50px;
@@ -40,18 +57,30 @@ header .nav {
   justify-content: center;
   align-items: center;
   margin: auto;
+  position: relative;
 }
 
 #mission {
   height: 700px;
   background-image: url("../resources/images/img-mission-background.jpg");
+  top: 70px;
+  margin-bottom: 140px;
 }
 
 #locations {
   height: 500px;
   background-image: url("../resources/images/img-locations-background.jpg");
+  margin-top: 50px;
+  flex-wrap: wrap;
 }
 
+#locations h2 {
+  background-color: transparent;
+  height: auto;
+  padding: 0;
+  position: absolute;
+  bottom: 415px;
+}
 
 .textbox {
   display: flex;
@@ -83,24 +112,24 @@ header .nav {
   flex-wrap: wrap;
 }
 
-#locations {
-  flex-wrap: wrap;
-}
-
 .locbox {
   display: flex;
   flex-direction: column;
+  opacity: 1;
   height: 300px;
   width: 300px;
-  justify-content: center;
   align-items: center;
-  margin: 20px;
+  justify-content: space-around;
+  margin: 15px 20px;
 }
 
 .contact {
+  display: flex;
+  flex-direction: column;
   height: 200px;
   width: 100%;
-  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 footer {
